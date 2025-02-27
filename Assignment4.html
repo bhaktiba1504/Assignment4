@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Schedule</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        h1 { color: #2c3e50; }
+        table { width: 80%; margin: 20px auto; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: center; }
+        th { background-color: #3498db; color: white; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+        button { padding: 10px; background-color: #28a745; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #218838; }
+        input[type="text"] { padding: 5px; margin: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Employee Shift Scheduler</h1>
+    <label for="employeeName">Employee Name:</label>
+    <input type="text" id="employeeName" />
+   
+    <br>
+    <label>Preferred Shifts:</label>
+    <input type="checkbox" name="shift" value="morning" id="myCheckbox" onclick="uncheckCheckbox()"> Morning
+    <input type="checkbox" name="shift" value="afternoon" id="myCheckbox1" onclick="uncheckCheckbox()"> Afternoon
+    <input type="checkbox" name="shift" value="evening" id="myCheckbox2" onclick="uncheckCheckbox()" > Evening
+    <br>
+    <button id="addEmployee" >Add Employee</button>
+    <button id="clearButton">Clear</button>
+    <br>
+    <div id="schedule"></div>
+    <script src="Assignment4.js"></script>
+</body>
+</html>
